@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./terminal.css">
+    <title>terminal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="wormie-container"></div>
+            <!-- <img src="../../img/wormie.png" alt="worm drawing"> -->
+            <ul>
+                <li><a href="../../../index.html">Back to Verzeichnis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <h1>Befehle für Verzeichnis- und Dateimanagement</h1>
+
+        <h2>Verzeichnisse erstellen</h2>
+        <section class="main-content__section">
+            <ul class="list list--margin-bottom">
+                <li class="list__item"><code>mkdir [verzeichnis]</code>: Erstellt ein neues Verzeichnis.</li>
+                <li class="list__item">
+                    <code>mkdir -p [verzeichnis]/[verzeichnis]</code>: Erstellt verschachtelte Verzeichnisse. Wenn
+                    übergeordnete Verzeichnisse nicht existieren, werden sie ebenfalls erstellt.
+                </li>
+            </ul>
+        </section>
+
+        <h2>Verschachtelte Verzeichnisse und Datei erstellen</h2>
+        <section class="main-content__section">
+            <ul class="list list--margin-bottom">
+                <li class="list__item">
+                    <code>mkdir -p [verzeichnis] && touch [verzeichnis]/[verzeichnis]/[datei]</code>: Erstellt
+                    verschachtelte Verzeichnisse und eine Datei im letzten Verzeichnis.
+                </li>
+            </ul>
+        </section>
+
+        <h2>Verzeichnisse und Dateien entfernen</h2>
+        <section class="main-content__section">
+            <ul class="list list--margin-bottom">
+                <li class="list__item"><code>rm -r [verzeichnis]</code>: Entfernt ein Verzeichnis und dessen gesamten
+                    Inhalt (rekursiv).</li>
+                <li class="list__item"><code>rm -i [datei]</code>: Entfernt eine Datei mit Bestätigungsaufforderung für
+                    jede Datei.</li>
+                <li class="list__item"><code>rm -f [datei]</code>: Erzwingt die Entfernung einer Datei ohne
+                    Bestätigungsaufforderung.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>

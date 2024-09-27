@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gitGitHub.css">
+    <title>GitHub</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="wormie-container"></div>
+            <ul class="header__list--unordered">
+                <li class="header__list-item"><a href="./git.html">Git</a></li>
+                <li class="header__list-item"><a href="../../../index.html">Back to Verzeichnis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+
+
+        <article>
+            <h1>GitHub</h1>
+            <p class="gitHub">
+                <span>GitHub</span> ist eine webbasierte Plattform, die hauptsächlich von
+                Entwicklern und Softwareentwicklungsprojekten genutzt wird, um Code zu
+                hosten, zu verwalten und gemeinsam daran zu arbeiten. Es bietet eine
+                Umgebung, in der Entwickler ihre Programmierprojekte speichern,
+                Versionskontrolle durchführen, Änderungen nachverfolgen, Code überprüfen
+                und zusammenarbeiten können.
+            </p>
+            <h2>Die Vorgehensweise:</h2>
+            <p class="main-content__text">Repo erstellen -> Ordner/Projekt erstellen und in VS Code öffnen ->
+                <strong>command j</strong> = öffnet das terminal
+            </p>
+            <div class="image-container">
+                <img src="../../img/repo.png" alt="">
+            </div>
+        </article>
+
+        <h3>Ich starte mit GitHub</h3>
+        <section class="main-content__section-one">
+            <p>Den Anweisungen auf GitHub folgen...</p>
+            <div class="flex-container">
+                <div class="main-content__listOne"> <!-- Für ein neues Projekt -->
+                    <p class="text-item"><code>git init</code> -> U = Untracked</p>
+                    <p class="text-item"><code>git add .</code> -> A = added</p>
+                    <p class="text-item"><code>git commit -m 'first commit'</code></p>
+                    <p class="text-item"><code>git branch -m main</code></p>
+                    <p class="text-item"><code>git remote add origin 'url'</code></p>
+                    <p class="text-item"><code>git push -u origin main</code></p>
+                </div>
+                <div class="main-content__listTwo"> <!-- Für ein bestehendes Projekt -->
+                    <p class="text-item"><code>git add .</code> -> Für gesamtes Projekt</p>
+                    <p class="text-item"><code>git add "assets/styl.css"</code> -> Eine Datei</p>
+                    <p class="text-item"><code>git commit -m 'Kommentar...'</code> </p>
+                    <p class="text-item"><code>git push</code></p>
+                </div>
+            </div>
+            <p>*Mit jedem Commit dokumentierst du den Fortschritt deines Projekts und schaffst eine zuverlässige
+                Möglichkeit, Änderungen zu verfolgen, Probleme zu beheben und den Projektverlauf zu verstehen.</p>
+        </section>
+
+        <h3>Ich ändere etwas im Code</h3>
+        <section class="main-content__section">
+            <div class="main-content__list">
+                <p class="text-item">Änderungen lokal machen => du hast z.B.: einen Tipfehler korrigiert. Nun erscheint
+                    ein "M" an der stelle bzw. vor der Datei, an der du was geänert hast, also in deinem Verzeichnis.
+                <div class="image-container">
+                    <img src="../../img/geaendert.png" alt="">
+                </div>
+                <p class="text-item">Nun muss das ganze geaddet werden: mit <code>gitt add .</code> und das "M" ändert
+                    nun die Farbe</p>
+                <div class="image-container">
+                    <img src="../../img/add.png" alt="">
+                </div>
+                <p class="text-item">Mit dem Befehl <code>git status</code> kannst du dir den aktuellen Status deines
+                    Git-Projekts anzeigen lassen. </p>
+                <div class="image-container">
+                    <img src="../../img/status.png" alt="">
+                </div>
+                <p class="text-item">Nun müssen die Änderungen mit <code>git commit -m 'Kommentar'</code> im Repository
+                    festgehalten werden.
+                <div class="image-container">
+                    <img src="../../img/commit.png" alt="">
+                </div>
+                <p class="text-item">Danach können die Änderungen mit <code>git push</code> in GitHub gesendet werden.
+                </p>
+            </div>
+
+
+        </section>
+
+        <h3>Ich will mir das Projekt klonen</h3>
+        <section class="main-content__section">
+            <p class="main-content__paragraph">Einen Ordner lokal erstellen => Name sollte passend zum Thema sein!</p>
+            <div class="main-content__content-group">
+                <div class="image-container2">
+                    <p class="main-content__paragraph">Das Projekt in den Repositories aussuchen und dann den ssh-Link
+                        kopieren</p>
+                    <img src="../../img/sshkopiren.png" alt="">
+                </div>
+
+                <div class="image-container3">
+                    <p class="main-content__paragraph">VS Code Terminal öffnen <code>git clone "ssh-link" .</code></p>
+                    <img src="../../img/clone.png" alt="">
+                </div>
+
+                <p>*Mit Punkt (.): Klont das Repository in das aktuelle Verzeichnis.</p>
+                <p>*Ohne Punkt: Erstellt ein neues Verzeichnis mit dem Namen des Repositories und klont die Dateien dort
+                    hinein.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
