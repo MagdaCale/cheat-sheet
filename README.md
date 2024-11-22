@@ -15,13 +15,13 @@ Das **Cheatsheet-Projekt** ist eine persönliche Referenz für Befehle, Anleitun
   - **Node.js**
   - **Terminal**
 
-![screenshot](./cheatsheet1.png)
+![screenshot](./cheatsheet2.png)
 
 ### 2. Detailseiten
 - Die Buttons auf der Hauptseite führen zu **HTML-Seiten**, die Anleitungen und Befehle zu den jeweiligen Themen enthalten.
 - Jede Seite ist speziell für ein Thema konzipiert (z. B. `nodeInstall.html` und `nodeDelete.html` für Node.js).
 
-![screenshot](./cheatsheet2.png)
+![screenshot](./cheatsheet1.png)
 
 ### 3. Tools und Stile
 - **Vanilla CSS:** Einfaches Styling mit Fokus auf Klarheit und Lesbarkeit.
